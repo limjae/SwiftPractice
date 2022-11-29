@@ -47,5 +47,4 @@ constantWithoutInit = 3
 
 //Pass
 variable = "Try Change"
-
-
+variable = "Change"
