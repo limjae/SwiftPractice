@@ -23,12 +23,21 @@ invertTrue.toggle()
 //Int type
 //Int8, 16, 32, 64
 var someInt: Int = -999
-
+//가독성 증가
+var someInt2: Int = 1_000_000_000
+var someInt3 = 0b0000_0010
+var someInt4 = 0o0000_0010
+var someInt5 = 0x0000_0010
 
 //Cannot insert float
 //someInt = 100.1
 
 var someUInt: UInt = 100
+
+// remainder
+var anyNumber = 100
+var anyRemainder = anyNumber % 3
+var isZero = anyRemainder == 0
 
 //Cannot insert signed int
 //someUInt = -999
@@ -85,6 +94,14 @@ var someDouble1: Double = 3
 var someDouble2: Double = 3.0
 // 자동 Double 변환
 var someDouble3 = 3.0
+
+var someDouble4 = 0.71
+var someDouble5 = 0.19
+
+// ??? 0.9 가 안나옴
+// 이진수 변환 후 계산
+var someDouble6 = someDouble4 + someDouble5
+var someDecimal = Decimal(someDouble6)
 
 //Cannot insert float
 //someDouble = someFloat
