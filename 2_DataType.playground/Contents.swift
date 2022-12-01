@@ -145,3 +145,18 @@ someString2.hasPrefix("he")
 someString2.hasPrefix(" ")
 someString2.hasSuffix("o")
 someString2.contains("ll")
+
+//unicode
+
+"a"
+//with code
+"\u{61}"
+"\u{61}" == "a"
+"\u{61}\u{61}\u{61}\u{61}\u{61}\u{61}"
+
+"\u{30}" <= "7" && "7" <= "\u{39}"
+"\u{30}" <= "a" && "a" <= "\u{39}"
+
+UnicodeScalar("가")
+String(44032, radix: 16)
+"\u{ac00}"
